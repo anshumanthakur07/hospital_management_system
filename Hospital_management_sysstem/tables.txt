@@ -1,0 +1,13 @@
+use anshu;
+create table patient_details(p_name varchar(50),p_age int,p_gender varchar(10),p_fathername varchar(50), p_problem varchar(50),p_phono varchar(10),p_address varchar(50));
+create table doctor_details(d_name varchar(50),d_age int,d_gender varchar(10),d_department varchar(50),d_phono varchar(10),d_address varchar(50));
+create table worker_details(w_name varchar(50),w_age int,w_gender varchar(10),w_workname varchar(50),w_phono varchar(10),w_address varchar(50));
+insert into patient_details values('anshuman singh',19,'male','Mr.xxxxxxxx singh','cold',9864858392,'lucknow');
+insert into patient_details values('sukhman singh',19,'male','sardar xxxxxxxx singh','fever',9815488986,'Mukerian');
+insert into doctor_details values('Dr.anshuman singh',56,'male','orthopedics',9754785295,'lucknow');
+insert into doctor_details values('Dr.sukhman singh',43,'male','neurology',9754785211,'jalandhar');
+insert into worker_details values('saurabh',32,'male','cleaning',9815675743,'maharashtra');
+insert into worker_details values('aryan',42,'male','cleaning',9812677549,'Bihar');
+select * from patient_details; 
+select * from doctor_details; 
+select * from worker_details;
